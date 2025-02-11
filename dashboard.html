@@ -1,0 +1,2422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resposnive.css">
+    <link rel="stylesheet" href="css/sidebar-style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <aside>
+        <a href="#" data-resize-btn class="logo">
+            <img src="./images/Logo.svg" alt="">
+
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <img src="./images/home.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./performance overview.html">
+                        <img src="./images/performence-overview.svg" alt="">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/calendar.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/book.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/task.svg" alt="">
+                        <span>Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/learning.svg" alt="">
+                        <span>Collections</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/settings.svg" alt="">
+                        <span>Downloads</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="top-bar">
+            <div class="tab-left-side">
+                <div class="page-name">
+                    <h6>Dashboard</h6>
+                </div>
+            </div>
+
+
+            <div class="user-notificationbell">
+                <div class="search-input-div">
+                    <input type="search" placeholder="search" class="search-input">
+                    <img src="./images/Search_Magnifying_Glass.svg" alt="" class="search-img">
+                </div>
+                <div class="notification-bell">
+                    <img src="images/share.svg" alt="">
+                </div>
+
+                <div class="user-img">
+                    <img src="images/notification.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="inner-content">
+            <div class="dashboard-top-row">
+                <div class="rbh-select">
+                    <select id="Kpi">
+                        <option value="dataset1">RBH</option>
+                        <option value="dataset2">Select KPI</option>
+                        <option value="dataset3">Select KPI</option>
+                    </select>
+                </div>
+
+                <div class="tab-select">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Month</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Quarter</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Year</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-report">
+                    <div class="create-report">
+                        <button class="filter-btn"><img src="./images/Filter.svg" alt="">Filter</button>
+                    </div>
+
+                    <div class="create-report">
+                        <button><img src="./images/download-pdf.svg" alt="">Create Report</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="dashboard-number-row">
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Disb. Amount</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>80</h4>
+                                <span class="cr">Crore</span>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Sanction Amount</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>80</h4>
+                                <span class="cr">Crore</span>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Login Count</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>240</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Lead Count</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>240</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Conversions</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>16.1%</h4>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.7%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-graph-row">
+                        <div class="dashboard-graph-left">
+                            <div class="leader-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Leader Board</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div>
+                                </div>
+                                <div class="leader-legend">
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-line ai"></div>
+                                        <div class="legend-text">
+                                            <p>Projection line</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square black"></div>
+                                        <div class="legend-text">
+                                            <p>Mumbai</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Pune</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Banglore</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square red"></div>
+                                        <div class="legend-text">
+                                            <p>Hyderabad</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="myChartMonth"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lmsd-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>LMSD</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+                                <div class="leader-legend">
+
+                                    <div class="calendar">
+                                        <img src="./images/calendar-icon.svg" alt="">
+                                        <p>Every 15th/month</p>
+                                    </div>
+
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Earning till date</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Remainder month</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="lmsd"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="target-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Target</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+
+                                <div class="progress-bar-div">
+                                    <div class="progress-heading">
+                                        <h6>RSM 1</h6>
+                                    </div>
+
+                                    <div class="monthly-progress">
+                                        <div class="target-amt">
+                                            <span>10cr</span>
+                                            <img src="./images/down-arrow.svg" alt="">
+                                        </div>
+                                        <div class="dark-blue one"></div>
+                                        <div class="light-blue one"></div>
+                                        <div class="grey one"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar-div two">
+                                    <div class="progress-heading">
+                                        <h6>RSM 2</h6>
+                                    </div>
+
+                                    <div class="monthly-progress">
+                                        <div class="target-amt">
+                                            <span>10cr</span>
+                                            <img src="./images/down-arrow.svg" alt="">
+                                        </div>
+                                        <div class="dark-blue two"></div>
+                                        <div class="grey two"></div>
+                                    </div>
+                                </div>
+
+                                <div class="target-legend">
+                                    <div class="legend-text-square">
+                                        <div class="legend-square progressb"></div>
+                                        <div class="legend-text">
+                                            <p>Progress</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square target"></div>
+                                        <div class="legend-text">
+                                            <p>Target Set</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square exceded"></div>
+                                        <div class="legend-text">
+                                            <p>Exceded</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="trends-summary">
+                                    <h6>Trends Summary</h6>
+                                    <p>RSM1 has exceed the target expectation. <br>
+                                        RSM2 is 10% from target score.</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="dashboard-graph-right">
+                            <div class="custom-chart custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Custom Chart</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+                                <div class="leader-legend">
+                                    <div class="select-div">
+                                        <div class="branch-role-region">
+                                            <select id="Branch">
+                                                <option value="dataset1">Branch 1</option>
+                                                <option value="dataset2">Branch 2</option>
+                                                <option value="dataset3">Branch 3</option>
+                                            </select>
+                                            <div class="vl one"></div>
+                                            <select id="Role">
+                                                <option value="dataset1">Role 1</option>
+                                                <option value="dataset2">Role 2</option>
+                                                <option value="dataset3">Role 3</option>
+                                            </select>
+                                            <div class="vl two"></div>
+                                            <select id="Region">
+                                                <option value="dataset1">Region 1</option>
+                                                <option value="dataset2">Region 2</option>
+                                                <option value="dataset3">Region 3</option>
+                                            </select>
+                                            <div class="vl three"></div>
+                                            <select id="Region">
+                                                <option value="dataset1">Region 1</option>
+                                                <option value="dataset2">Region 2</option>
+                                                <option value="dataset3">Region 3</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="customchart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Rohan Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Rahual Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Mayur Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Sagar Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="performance-graph custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Performance</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+
+                                <div class="targetCard">
+                                    <div class="salesBox">
+                                        <canvas id="targetmonth"></canvas>
+                                    </div>
+
+                                </div>
+
+                                <div class="leader-legend performance-legend">
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square black"></div>
+                                        <div class="legend-text">
+                                            <p>Mumbai</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Pune</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Banglore</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <!-- QUARTER START -->
+                    <div class="dashboard-number-row">
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Disb. Amount</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>120</h4>
+                                <span class="cr">Crore</span>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+4.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Sanction Amount</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>150</h4>
+                                <span class="cr">Crore</span>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.5%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Login Count</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>550</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Lead Count</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>575</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Conversions</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>13.1%</h4>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-graph-row">
+                        <div class="dashboard-graph-left">
+                            <div class="leader-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Leader Board</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div>
+                                </div>
+                                <div class="leader-legend">
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-line ai"></div>
+                                        <div class="legend-text">
+                                            <p>Projection line</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square black"></div>
+                                        <div class="legend-text">
+                                            <p>Mumbai</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Pune</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Banglore</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square red"></div>
+                                        <div class="legend-text">
+                                            <p>Hyderabad</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="myChartquarter"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lmsd-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>LMSD</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+                                <div class="leader-legend">
+
+                                    <div class="calendar">
+                                        <img src="./images/calendar-icon.svg" alt="">
+                                        <p>Every 15th/month</p>
+                                    </div>
+
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Earning till date</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Remainder month</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="lmsdquarter"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="target-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Target</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+
+                                <div class="progress-bar-div">
+                                    <div class="progress-heading">
+                                        <h6>RSM 1</h6>
+                                    </div>
+
+                                    <div class="monthly-progress">
+                                        <div class="target-amt">
+                                            <span>10cr</span>
+                                            <img src="./images/down-arrow.svg" alt="">
+                                        </div>
+                                        <div class="dark-blue one"></div>
+                                        <div class="light-blue one"></div>
+                                        <div class="grey one"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar-div two">
+                                    <div class="progress-heading">
+                                        <h6>RSM 2</h6>
+                                    </div>
+
+                                    <div class="monthly-progress">
+                                        <div class="target-amt">
+                                            <span>10cr</span>
+                                            <img src="./images/down-arrow.svg" alt="">
+                                        </div>
+                                        <div class="dark-blue two"></div>
+                                        <div class="grey two"></div>
+                                    </div>
+                                </div>
+
+                                <div class="target-legend">
+                                    <div class="legend-text-square">
+                                        <div class="legend-square progressb"></div>
+                                        <div class="legend-text">
+                                            <p>Progress</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square target"></div>
+                                        <div class="legend-text">
+                                            <p>Target Set</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square exceded"></div>
+                                        <div class="legend-text">
+                                            <p>Exceded</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="trends-summary">
+                                    <h6>Trends Summary</h6>
+                                    <p>RSM1 has exceed the target expectation. <br>
+                                        RSM2 is 10% from target score.</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="dashboard-graph-right">
+                            <div class="custom-chart custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Custom Chart</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+                                <div class="leader-legend">
+                                    <div class="select-div">
+                                        <div class="branch-role-region">
+                                            <select id="Branch">
+                                                <option value="dataset1">Branch 1</option>
+                                                <option value="dataset2">Branch 2</option>
+                                                <option value="dataset3">Branch 3</option>
+                                            </select>
+                                            <div class="vl one"></div>
+                                            <select id="Role">
+                                                <option value="dataset1">Role 1</option>
+                                                <option value="dataset2">Role 2</option>
+                                                <option value="dataset3">Role 3</option>
+                                            </select>
+                                            <div class="vl two"></div>
+                                            <select id="Region">
+                                                <option value="dataset1">Region 1</option>
+                                                <option value="dataset2">Region 2</option>
+                                                <option value="dataset3">Region 3</option>
+                                            </select>
+                                            <div class="vl three"></div>
+                                            <select id="Region">
+                                                <option value="dataset1">Region 1</option>
+                                                <option value="dataset2">Region 2</option>
+                                                <option value="dataset3">Region 3</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="customchartquarter"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Rohan Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Rahual Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Mayur Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Sagar Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="performance-graph custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Performance</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+
+                                <div class="targetCard">
+                                    <div class="salesBox">
+                                        <canvas id="targetquarter"></canvas>
+                                    </div>
+
+                                </div>
+
+                                <div class="leader-legend performance-legend">
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square black"></div>
+                                        <div class="legend-text">
+                                            <p>Mumbai</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Pune</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Banglore</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <!-- YEAR TAB START -->
+                    <div class="dashboard-number-row">
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Disb. Amount</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>200</h4>
+                                <span class="cr">Crore</span>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+8.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Sanction Amount</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>350</h4>
+                                <span class="cr">Crore</span>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+12.5%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Login Count</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>1250</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+8.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Lead Count</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>875</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+8.7%</span>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/disb-amt.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Conversions</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>33.1%</h4>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+8.2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-graph-row">
+                        <div class="dashboard-graph-left">
+                            <div class="leader-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Leader Board</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div>
+                                </div>
+                                <div class="leader-legend">
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-line ai"></div>
+                                        <div class="legend-text">
+                                            <p>Projection line</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square black"></div>
+                                        <div class="legend-text">
+                                            <p>Mumbai</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Pune</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Banglore</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square red"></div>
+                                        <div class="legend-text">
+                                            <p>Hyderabad</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="myChartyear"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lmsd-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>LMSD</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+                                <div class="leader-legend">
+
+                                    <div class="calendar">
+                                        <img src="./images/calendar-icon.svg" alt="">
+                                        <p>Every 15th/month</p>
+                                    </div>
+
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Earning till date</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Remainder month</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="lmsdyear"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="target-board custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Target</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+
+                                <div class="progress-bar-div">
+                                    <div class="progress-heading">
+                                        <h6>RSM 1</h6>
+                                    </div>
+
+                                    <div class="monthly-progress">
+                                        <div class="target-amt">
+                                            <span>10cr</span>
+                                            <img src="./images/down-arrow.svg" alt="">
+                                        </div>
+                                        <div class="dark-blue one"></div>
+                                        <div class="light-blue one"></div>
+                                        <div class="grey one"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar-div two">
+                                    <div class="progress-heading">
+                                        <h6>RSM 2</h6>
+                                    </div>
+
+                                    <div class="monthly-progress">
+                                        <div class="target-amt">
+                                            <span>10cr</span>
+                                            <img src="./images/down-arrow.svg" alt="">
+                                        </div>
+                                        <div class="dark-blue two"></div>
+                                        <div class="grey two"></div>
+                                    </div>
+                                </div>
+
+                                <div class="target-legend">
+                                    <div class="legend-text-square">
+                                        <div class="legend-square progressb"></div>
+                                        <div class="legend-text">
+                                            <p>Progress</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square target"></div>
+                                        <div class="legend-text">
+                                            <p>Target Set</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square exceded"></div>
+                                        <div class="legend-text">
+                                            <p>Exceded</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="trends-summary">
+                                    <h6>Trends Summary</h6>
+                                    <p>RSM1 has exceed the target expectation. <br>
+                                        RSM2 is 10% from target score.</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="dashboard-graph-right">
+                            <div class="custom-chart custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Custom Chart</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+                                <div class="leader-legend">
+                                    <div class="select-div">
+                                        <div class="branch-role-region">
+                                            <select id="Branch">
+                                                <option value="dataset1">Branch 1</option>
+                                                <option value="dataset2">Branch 2</option>
+                                                <option value="dataset3">Branch 3</option>
+                                            </select>
+                                            <div class="vl one"></div>
+                                            <select id="Role">
+                                                <option value="dataset1">Role 1</option>
+                                                <option value="dataset2">Role 2</option>
+                                                <option value="dataset3">Role 3</option>
+                                            </select>
+                                            <div class="vl two"></div>
+                                            <select id="Region">
+                                                <option value="dataset1">Region 1</option>
+                                                <option value="dataset2">Region 2</option>
+                                                <option value="dataset3">Region 3</option>
+                                            </select>
+                                            <div class="vl three"></div>
+                                            <select id="Region">
+                                                <option value="dataset1">Region 1</option>
+                                                <option value="dataset2">Region 2</option>
+                                                <option value="dataset3">Region 3</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="leader-graph">
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="customchartyear"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Rohan Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Rahual Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Mayur Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="employee-sumarry">
+                                    <div class="employee-name">
+                                        <p>Sagar Summary</p>
+                                    </div>
+
+                                    <div class="employee-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="employee-modal" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="performance-graph custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/leader-board-icon.svg" alt="">
+                                        </div>
+                                        <h6>Performance</h6>
+                                    </div>
+
+                                    <!-- <div class="top-bar-right">
+                                        <button type="button" class="cust-btn">View</button>
+                                    </div> -->
+                                </div>
+
+                                <div class="targetCard">
+                                    <div class="salesBox">
+                                        <canvas id="targetyear"></canvas>
+                                    </div>
+
+                                </div>
+
+                                <div class="leader-legend performance-legend">
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square black"></div>
+                                        <div class="legend-text">
+                                            <p>Mumbai</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square blue"></div>
+                                        <div class="legend-text">
+                                            <p>Pune</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="legend-text-square">
+                                        <div class="legend-square db"></div>
+                                        <div class="legend-text">
+                                            <p>Banglore</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const resizeBtn = document.querySelector("[data-resize-btn]");
+
+        resizeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.body.classList.toggle("sb-expanded");
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script> -->
+    <script>
+        // setup 
+        const dataMonth = {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+            datasets: [
+
+                {
+                    type: "line",
+                    label: "Projection line",
+                    data: [185, 185, 185, 185, 185, 185, 185, 185, 185, 185],
+                    borderColor: '#FFAE12',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Mumbai',
+                    data: [60, 60, 60, 60, 60, 60, 60, 60, 60, 70],
+                    backgroundColor: [
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                    maxWidth: 10,
+                    maxHeight: 10
+
+                },
+                {
+                    label: 'Pune',
+                    data: [10, 90, 60, 50, 10, 90, 30, 65, 45, 39],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Banglore',
+                    data: [95, 20, 83, 87, 44, 69, 33, 45, 27, 63],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Hyderabad',
+                    data: [63, 55, 32, 78, 81, 45, 49, 75, 49, 55],
+                    backgroundColor: [
+                        'rgba(217, 13, 50, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configMonth = {
+            type: 'bar',
+            data: dataMonth,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChart = new Chart(
+            document.getElementById('myChartMonth'),
+            configMonth
+        );
+
+
+
+        // Instantly assign Chart.js version
+        const chartVersion = document.getElementById('chartVersion');
+        chartVersion.innerText = Chart.version;
+    </script>
+
+    <script>
+        // setup 
+        const datalmsd = {
+            labels: ['Last Month', 'This Month'],
+            datasets: [
+                {
+                    // label: 'Last Month',
+                    data: [27, 15],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    // label: 'Banglore',
+                    data: [40, 60],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configlmsd = {
+            type: 'bar',
+            data: datalmsd,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const lmsd = new Chart(
+            document.getElementById('lmsd'),
+            configlmsd
+        );
+    </script>
+
+    <script>
+        // setup 
+        const datacc = {
+            labels: ['Rohan', 'Rahual', 'Mayur', 'Sagar'],
+            datasets: [
+                {
+                    type: "line",
+                    label: "Ai Projection",
+                    data: [140, 140, 140, 140],
+                    borderColor: '#D90D32',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                },
+                {
+                    // label: 'Last Month',
+                    data: [200, 183, 183, 175],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configcc = {
+            type: 'bar',
+            data: datacc,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const customchart = new Chart(
+            document.getElementById('customchart'),
+            configcc
+        );
+    </script>
+
+    <script>
+        const targetDatamonth = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [100, 50, 50],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountmonth = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsmonth = {
+            id: 'targetcountsmonth',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('200Cr', xCoor, yCoor);
+            }
+        }
+
+        const configTargetmonth = {
+            type: 'doughnut',
+            data: targetDatamonth,
+            options: targetcountmonth,
+            plugins: [targetcountsmonth]
+
+
+        };
+
+        const targetmonth = new Chart(
+            document.getElementById('targetmonth'),
+            configTargetmonth
+        );
+
+
+    </script>
+
+    <!-- QUARTER SCRIPT START -->
+
+    <script>
+        // setup 
+        const dataquarter = {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+            datasets: [
+
+                {
+                    type: "line",
+                    label: "Projection line",
+                    data: [185, 185, 185, 185, 185, 185, 185, 185, 185, 185],
+                    borderColor: '#FFAE12',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Mumbai',
+                    data: [60, 60, 60, 60, 60, 60, 60, 60, 60, 70],
+                    backgroundColor: [
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                    maxWidth: 10,
+                    maxHeight: 10
+
+                },
+                {
+                    label: 'Pune',
+                    data: [10, 90, 60, 50, 10, 90, 30, 65, 45, 39],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Banglore',
+                    data: [95, 20, 83, 87, 44, 69, 33, 45, 27, 63],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Hyderabad',
+                    data: [63, 55, 32, 78, 81, 45, 49, 75, 49, 55],
+                    backgroundColor: [
+                        'rgba(217, 13, 50, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configquarter = {
+            type: 'bar',
+            data: dataquarter,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChartquarter = new Chart(
+            document.getElementById('myChartquarter'),
+            configquarter
+        );
+
+
+
+        // Instantly assign Chart.js version
+        // const chartVersion = document.getElementById('chartVersion');
+        // chartVersion.innerText = Chart.version;
+    </script>
+
+    <script>
+        // setup 
+        const datalmsdquarter = {
+            labels: ['Last Month', 'This Month'],
+            datasets: [
+                {
+                    // label: 'Last Month',
+                    data: [55, 75],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    // label: 'Banglore',
+                    data: [60, 80],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configlmsdquarter = {
+            type: 'bar',
+            data: datalmsdquarter,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const lmsdquarter = new Chart(
+            document.getElementById('lmsdquarter'),
+            configlmsdquarter
+        );
+    </script>
+
+    <script>
+        // setup 
+        const dataccquarter = {
+            labels: ['Rohan', 'Rahual', 'Mayur', 'Sagar'],
+            datasets: [
+                {
+                    type: "line",
+                    label: "Ai Projection",
+                    data: [170, 130, 150, 180],
+                    borderColor: '#D90D32',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                },
+                {
+                    // label: 'Last Month',
+                    data: [700, 283, 583, 775],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configccquarter = {
+            type: 'bar',
+            data: dataccquarter,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const customchartquarter = new Chart(
+            document.getElementById('customchartquarter'),
+            configccquarter
+        );
+    </script>
+
+    <script>
+        const targetDataquarter = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [250, 175, 75],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountquarter = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsquarter = {
+            id: 'targetcountsquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('500Cr', xCoor, yCoor);
+            }
+        }
+
+        const configTargetquarter = {
+            type: 'doughnut',
+            data: targetDataquarter,
+            options: targetcountquarter,
+            plugins: [targetcountsquarter]
+
+
+        };
+
+        const targetquarter = new Chart(
+            document.getElementById('targetquarter'),
+            configTargetquarter
+        );
+
+
+    </script>
+
+
+    <!-- QUARTER SCRIPT END -->
+
+    <!-- YEAR SCRIPT START -->
+
+    <script>
+        // setup 
+        const datayear = {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+            datasets: [
+
+                {
+                    type: "line",
+                    label: "Projection line",
+                    data: [185, 185, 185, 185, 185, 185, 185, 185, 185, 185],
+                    borderColor: '#FFAE12',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Mumbai',
+                    data: [60, 60, 60, 60, 60, 60, 60, 60, 60, 70],
+                    backgroundColor: [
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                    maxWidth: 10,
+                    maxHeight: 10
+
+                },
+                {
+                    label: 'Pune',
+                    data: [10, 90, 60, 50, 10, 90, 30, 65, 45, 39],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Banglore',
+                    data: [95, 20, 83, 87, 44, 69, 33, 45, 27, 63],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Hyderabad',
+                    data: [63, 55, 32, 78, 81, 45, 49, 75, 49, 55],
+                    backgroundColor: [
+                        'rgba(217, 13, 50, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configyear = {
+            type: 'bar',
+            data: datayear,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChartyear = new Chart(
+            document.getElementById('myChartyear'),
+            configyear
+        );
+
+
+
+        // Instantly assign Chart.js version
+        // const chartVersion = document.getElementById('chartVersion');
+        // chartVersion.innerText = Chart.version;
+    </script>
+
+    <script>
+        // setup 
+        const datalmsdyear = {
+            labels: ['Last Month', 'This Month'],
+            datasets: [
+                {
+                    // label: 'Last Month',
+                    data: [100, 175],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    // label: 'Banglore',
+                    data: [150, 180],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configlmsdyear = {
+            type: 'bar',
+            data: datalmsdyear,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const lmsdyear = new Chart(
+            document.getElementById('lmsdyear'),
+            configlmsdyear
+        );
+    </script>
+
+    <script>
+        // setup 
+        const dataccyear = {
+            labels: ['Rohan', 'Rahual', 'Mayur', 'Sagar'],
+            datasets: [
+                {
+                    type: "line",
+                    label: "Ai Projection",
+                    data: [370, 230, 250, 280],
+                    borderColor: '#D90D32',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                },
+                {
+                    // label: 'Last Month',
+                    data: [1000, 783, 683, 975],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configccyear = {
+            type: 'bar',
+            data: dataccyear,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const customchartyear = new Chart(
+            document.getElementById('customchartyear'),
+            configccyear
+        );
+    </script>
+
+    <script>
+        const targetDatayear = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [550, 275, 225],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountyear = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsyear = {
+            id: 'targetcountsquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('1000Cr', xCoor, yCoor);
+            }
+        }
+
+        const configTargetyear = {
+            type: 'doughnut',
+            data: targetDatayear,
+            options: targetcountyear,
+            plugins: [targetcountsyear]
+
+
+        };
+
+        const targetyear = new Chart(
+            document.getElementById('targetyear'),
+            configTargetyear
+        );
+
+
+    </script>
+
+
+    <!-- YEAR SCRIPT END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

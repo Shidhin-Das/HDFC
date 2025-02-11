@@ -1,0 +1,2298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resposnive.css">
+    <link rel="stylesheet" href="css/sidebar-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <aside>
+        <a href="#" data-resize-btn class="logo">
+            <img src="./images/Logo.svg" alt="">
+
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./dashboard.html">
+                        <img src="./images/home.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <img src="./images/performence-overview.svg" alt="">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/calendar.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/book.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/task.svg" alt="">
+                        <span>Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/learning.svg" alt="">
+                        <span>Collections</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/settings.svg" alt="">
+                        <span>Downloads</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="top-bar">
+            <div class="tab-left-side">
+                <div class="page-name">
+                    <h6>Performance Overview</h6>
+                </div>
+            </div>
+
+
+            <div class="user-notificationbell">
+                <div class="search-input-div">
+                    <input type="search" placeholder="search" class="search-input">
+                    <img src="./images/Search_Magnifying_Glass.svg" alt="" class="search-img">
+                </div>
+                <div class="notification-bell">
+                    <img src="images/share.svg" alt="">
+                </div>
+
+                <div class="user-img">
+                    <img src="images/notification.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="inner-content">
+            <div class="tab-report">
+                <div class="tab-select">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Month</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Quarter</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Year</button>
+                        </li>
+                    </ul>
+
+                    <div class="select-div">
+                        <div class="branch-role-region">
+                            <select id="Branch">
+                                <option value="dataset1">Branch 1</option>
+                                <option value="dataset2">Branch 2</option>
+                                <option value="dataset3">Branch 3</option>
+                            </select>
+                            <div class="vl one"></div>
+                            <select id="Role">
+                                <option value="dataset1">Role 1</option>
+                                <option value="dataset2">Role 2</option>
+                                <option value="dataset3">Role 3</option>
+                            </select>
+                            <div class="vl two"></div>
+                            <select id="Region">
+                                <option value="dataset1">Region 1</option>
+                                <option value="dataset2">Region 2</option>
+                                <option value="dataset3">Region 3</option>
+                            </select>
+                        </div>
+
+                        <div class="kpi-select">
+                            <select id="Kpi">
+                                <option value="dataset1">Select KPI</option>
+                                <option value="dataset2">Select KPI</option>
+                                <option value="dataset3">Select KPI</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="create-report">
+                    <button><img src="./images/download-pdf.svg" alt="">Create Report</button>
+                </div>
+
+            </div>
+
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <!-- MONTH START -->
+
+                    <div class="leader-sales-row">
+                        <div class="leader-board custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/leader-board-icon.svg" alt="">
+                                    </div>
+                                    <h6>Leader Board</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <button type="button" class="cust-btn">View</button>
+                                </div>
+                            </div>
+                            <div class="leader-legend">
+
+                                <div class="legend-text-square">
+                                    <div class="legend-line ai"></div>
+                                    <div class="legend-text">
+                                        <p>AI Projection</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square black"></div>
+                                    <div class="legend-text">
+                                        <p>Mumbai</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square blue"></div>
+                                    <div class="legend-text">
+                                        <p>Pune</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square db"></div>
+                                    <div class="legend-text">
+                                        <p>Banglore</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square red"></div>
+                                    <div class="legend-text">
+                                        <p>Hyderabad</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="leader-graph">
+                                <div class="chartCard">
+                                    <div class="chartBox">
+                                        <canvas id="myChartMonth"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-board custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/sales-share.svg" alt="">
+                                    </div>
+                                    <h6>Sales Overview</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <div class="kpi-select">
+                                        <select id="Kpi">
+                                            <option value="dataset1">All KPIs</option>
+                                            <option value="dataset2">Select KPI</option>
+                                            <option value="dataset3">Select KPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sales-chart">
+                                <div class="salesCard">
+                                    <div class="salesBox">
+                                        <canvas id="mysalesMonth"></canvas>
+                                    </div>
+
+                                    <div class="sales-box-col">
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box red"></div>
+                                                <p>Disbursement Amount</p>
+                                            </div>
+                                            <p>80cr</p>
+                                        </div>
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box db"></div>
+                                                <p>Sanction Amount</p>
+                                            </div>
+                                            <p>80cr</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="salesCard">
+                                    <div class="salesBox">
+                                        <canvas id="mysalescounts"></canvas>
+                                    </div>
+
+                                    <div class="sales-box-col">
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box red"></div>
+                                                <p>Login Count</p>
+                                            </div>
+                                            <p>200</p>
+                                        </div>
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box db"></div>
+                                                <p>Lead Count</p>
+                                            </div>
+                                            <p>600</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="kpi-regional-targets-row">
+                        <div class="kpi-box custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/kpi-trends.svg" alt="">
+                                    </div>
+                                    <h6>KPI Trends</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <div class="kpi-select">
+                                        <select id="KpiTrends">
+                                            <option value="dataset1">Select KPI</option>
+                                            <option value="dataset2">Select KPI</option>
+                                            <option value="dataset3">Select KPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kpi-graph">
+                                <div class="kpiCard">
+                                    <div class="kpiBox">
+                                        <canvas id="mykpiMonth"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trends-line-row">
+                                <div class="legend-line-text">
+                                    <div class="legend-line lead"></div>
+                                    <div class="legend-text">
+                                        <p>Lead</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line login"></div>
+                                    <div class="legend-text">
+                                        <p>Login</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line sanction"></div>
+                                    <div class="legend-text">
+                                        <p>Sanction</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line disbursement"></div>
+                                    <div class="legend-text">
+                                        <p>Disbursement</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="kpi-trends-box">
+                                <h6>Trends Summary</h6>
+                                <p>This month your KPIs are stable compared to last month. </p>
+                            </div>
+                        </div>
+
+                        <div class="regional-performance custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/location.svg" alt="">
+                                    </div>
+                                    <h6>Regional Performance</h6>
+                                </div>
+                            </div>
+
+                            <div class="map">
+                                <!-- <div id="mumbaiMap"></div> -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
+                                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <div class="location-scroll">
+                                <div class="location-box">
+                                    <div class="location-text">
+                                        <p class="area">Mumbai | 4 Locations</p>
+                                        <p class="area-incharge">Rohan Kumar | Abhishek Jain | Ravi Gill</p>
+                                        <p class="amt">50 Cr</p>
+                                    </div>
+
+                                    <div class="location-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="map-btn" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="location-box">
+                                    <div class="location-text">
+                                        <p class="area">Pune | 3 Locations</p>
+                                        <p class="area-incharge">Arjun | Harsh | Abhilash</p>
+                                        <p class="amt">40Cr</p>
+                                    </div>
+
+                                    <div class="location-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="map-btn" data-bs-toggle="modal"
+                                            data-bs-target="#puneModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="targets custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/sales-share.svg" alt="">
+                                    </div>
+                                    <h6>Targets</h6>
+                                </div>
+                            </div>
+
+                            <div class="targetCard">
+                                <div class="salesBox">
+                                    <canvas id="targetMonth"></canvas>
+                                </div>
+
+                                <div class="sales-box-col">
+                                    <div class="sales-boxes">
+                                        <div class="color-para">
+                                            <p class="target-head">Overall Targets Achieved</p>
+                                        </div>
+                                        <p class="target-percent">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- MONTH END -->
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <!-- QUARTER START -->
+
+                    <div class="leader-sales-row">
+                        <div class="leader-board custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/leader-board-icon.svg" alt="">
+                                    </div>
+                                    <h6>Leader Board</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <button type="button" class="cust-btn">View</button>
+                                </div>
+                            </div>
+                            <div class="leader-legend">
+
+                                <div class="legend-text-square">
+                                    <div class="legend-line ai"></div>
+                                    <div class="legend-text">
+                                        <p>AI Projection</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square black"></div>
+                                    <div class="legend-text">
+                                        <p>Mumbai</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square blue"></div>
+                                    <div class="legend-text">
+                                        <p>Pune</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square db"></div>
+                                    <div class="legend-text">
+                                        <p>Banglore</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square red"></div>
+                                    <div class="legend-text">
+                                        <p>Hyderabad</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="leader-graph">
+                                <div class="chartCard">
+                                    <div class="chartBox">
+                                        <canvas id="myChartquarter"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-board custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/sales-share.svg" alt="">
+                                    </div>
+                                    <h6>Sales Overview</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <div class="kpi-select">
+                                        <select id="Kpi">
+                                            <option value="dataset1">All KPIs</option>
+                                            <option value="dataset2">Select KPI</option>
+                                            <option value="dataset3">Select KPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sales-chart">
+                                <div class="salesCard">
+                                    <div class="salesBox">
+                                        <canvas id="mysalesquarter"></canvas>
+                                    </div>
+
+                                    <div class="sales-box-col">
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box red"></div>
+                                                <p>Disbursement Amount</p>
+                                            </div>
+                                            <p>150 cr</p>
+                                        </div>
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box db"></div>
+                                                <p>Sanction Amount</p>
+                                            </div>
+                                            <p>50 cr</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="salesCard">
+                                    <div class="salesBox">
+                                        <canvas id="mysalescountsquarter"></canvas>
+                                    </div>
+
+                                    <div class="sales-box-col">
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box red"></div>
+                                                <p>Login Count</p>
+                                            </div>
+                                            <p>185</p>
+                                        </div>
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box db"></div>
+                                                <p>Lead Count</p>
+                                            </div>
+                                            <p>215</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-regional-targets-row">
+                        <div class="kpi-box custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/kpi-trends.svg" alt="">
+                                    </div>
+                                    <h6>KPI Trends</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <div class="kpi-select">
+                                        <select id="KpiTrends">
+                                            <option value="dataset1">Select KPI</option>
+                                            <option value="dataset2">Select KPI</option>
+                                            <option value="dataset3">Select KPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kpi-graph">
+                                <div class="kpiCard">
+                                    <div class="kpiBox">
+                                        <canvas id="mykpiquarter"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trends-line-row">
+                                <div class="legend-line-text">
+                                    <div class="legend-line lead"></div>
+                                    <div class="legend-text">
+                                        <p>Lead</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line login"></div>
+                                    <div class="legend-text">
+                                        <p>Login</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line sanction"></div>
+                                    <div class="legend-text">
+                                        <p>Sanction</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line disbursement"></div>
+                                    <div class="legend-text">
+                                        <p>Disbursement</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="kpi-trends-box">
+                                <h6>Trends Summary</h6>
+                                <p>This month your KPIs are stable compared to last month. </p>
+                            </div>
+                        </div>
+
+                        <div class="regional-performance custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/location.svg" alt="">
+                                    </div>
+                                    <h6>Regional Performance</h6>
+                                </div>
+                            </div>
+
+                            <div class="map">
+                                <!-- <div id="mumbaiMap"></div> -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
+                                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <div class="location-scroll">
+                                <div class="location-box">
+                                    <div class="location-text">
+                                        <p class="area">Mumbai | 4 Locations</p>
+                                        <p class="area-incharge">Rohan Kumar | Abhishek Jain | Ravi Gill</p>
+                                        <p class="amt">50 Cr</p>
+                                    </div>
+
+                                    <div class="location-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="map-btn" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="location-box">
+                                    <div class="location-text">
+                                        <p class="area">Pune | 3 Locations</p>
+                                        <p class="area-incharge">Arjun | Harsh | Abhilash</p>
+                                        <p class="amt">40Cr</p>
+                                    </div>
+
+                                    <div class="location-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="map-btn" data-bs-toggle="modal"
+                                            data-bs-target="#puneModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="targets custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/sales-share.svg" alt="">
+                                    </div>
+                                    <h6>Targets</h6>
+                                </div>
+                            </div>
+
+                            <div class="targetCard">
+                                <div class="salesBox">
+                                    <canvas id="targetquarter"></canvas>
+                                </div>
+
+                                <div class="sales-box-col">
+                                    <div class="sales-boxes">
+                                        <div class="color-para">
+                                            <p class="target-head">Overall Targets Achieved</p>
+                                        </div>
+                                        <p class="target-percent">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- QUARTER END -->
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <!-- YEAR TAB START -->
+
+                    <div class="leader-sales-row">
+                        <div class="leader-board custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/leader-board-icon.svg" alt="">
+                                    </div>
+                                    <h6>Leader Board</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <button type="button" class="cust-btn">View</button>
+                                </div>
+                            </div>
+                            <div class="leader-legend">
+
+                                <div class="legend-text-square">
+                                    <div class="legend-line ai"></div>
+                                    <div class="legend-text">
+                                        <p>AI Projection</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square black"></div>
+                                    <div class="legend-text">
+                                        <p>Mumbai</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square blue"></div>
+                                    <div class="legend-text">
+                                        <p>Pune</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square db"></div>
+                                    <div class="legend-text">
+                                        <p>Banglore</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-text-square">
+                                    <div class="legend-square red"></div>
+                                    <div class="legend-text">
+                                        <p>Hyderabad</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="leader-graph">
+                                <div class="chartCard">
+                                    <div class="chartBox">
+                                        <canvas id="myChartyear"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-board custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/sales-share.svg" alt="">
+                                    </div>
+                                    <h6>Sales Overview</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <div class="kpi-select">
+                                        <select id="Kpi">
+                                            <option value="dataset1">All KPIs</option>
+                                            <option value="dataset2">Select KPI</option>
+                                            <option value="dataset3">Select KPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sales-chart">
+                                <div class="salesCard">
+                                    <div class="salesBox">
+                                        <canvas id="mysalesyear"></canvas>
+                                    </div>
+
+                                    <div class="sales-box-col">
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box red"></div>
+                                                <p>Disbursement Amount</p>
+                                            </div>
+                                            <p>235 cr</p>
+                                        </div>
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box db"></div>
+                                                <p>Sanction Amount</p>
+                                            </div>
+                                            <p>315 cr</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="salesCard">
+                                    <div class="salesBox">
+                                        <canvas id="mysalescountsyear"></canvas>
+                                    </div>
+
+                                    <div class="sales-box-col">
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box red"></div>
+                                                <p>Login Count</p>
+                                            </div>
+                                            <p>185</p>
+                                        </div>
+                                        <div class="sales-boxes">
+                                            <div class="color-para">
+                                                <div class="color-box db"></div>
+                                                <p>Lead Count</p>
+                                            </div>
+                                            <p>215</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-regional-targets-row">
+                        <div class="kpi-box custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/kpi-trends.svg" alt="">
+                                    </div>
+                                    <h6>KPI Trends</h6>
+                                </div>
+
+                                <div class="top-bar-right">
+                                    <div class="kpi-select">
+                                        <select id="KpiTrends">
+                                            <option value="dataset1">Select KPI</option>
+                                            <option value="dataset2">Select KPI</option>
+                                            <option value="dataset3">Select KPI</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="kpi-graph">
+                                <div class="kpiCard">
+                                    <div class="kpiBox">
+                                        <canvas id="mykpiyear"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trends-line-row">
+                                <div class="legend-line-text">
+                                    <div class="legend-line lead"></div>
+                                    <div class="legend-text">
+                                        <p>Lead</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line login"></div>
+                                    <div class="legend-text">
+                                        <p>Login</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line sanction"></div>
+                                    <div class="legend-text">
+                                        <p>Sanction</p>
+                                    </div>
+                                </div>
+
+                                <div class="legend-line-text">
+                                    <div class="legend-line disbursement"></div>
+                                    <div class="legend-text">
+                                        <p>Disbursement</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="kpi-trends-box">
+                                <h6>Trends Summary</h6>
+                                <p>This month your KPIs are stable compared to last month. </p>
+                            </div>
+                        </div>
+
+                        <div class="regional-performance custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/location.svg" alt="">
+                                    </div>
+                                    <h6>Regional Performance</h6>
+                                </div>
+                            </div>
+
+                            <div class="map">
+                                <!-- <div id="mumbaiMap"></div> -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
+                                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <div class="location-scroll">
+                                <div class="location-box">
+                                    <div class="location-text">
+                                        <p class="area">Mumbai | 4 Locations</p>
+                                        <p class="area-incharge">Rohan Kumar | Abhishek Jain | Ravi Gill</p>
+                                        <p class="amt">50 Cr</p>
+                                    </div>
+
+                                    <div class="location-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="map-btn" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="location-box">
+                                    <div class="location-text">
+                                        <p class="area">Pune | 3 Locations</p>
+                                        <p class="area-incharge">Arjun | Harsh | Abhilash</p>
+                                        <p class="amt">40Cr</p>
+                                    </div>
+
+                                    <div class="location-btn">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="map-btn" data-bs-toggle="modal"
+                                            data-bs-target="#puneModal">
+                                            <img src="./images/map-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="targets custom-div">
+                            <div class="box-top-bar">
+                                <div class="top-bar-left">
+                                    <div class="icon">
+                                        <img src="./images/sales-share.svg" alt="">
+                                    </div>
+                                    <h6>Targets</h6>
+                                </div>
+                            </div>
+
+                            <div class="targetCard">
+                                <div class="salesBox">
+                                    <canvas id="targetyear"></canvas>
+                                </div>
+
+                                <div class="sales-box-col">
+                                    <div class="sales-boxes">
+                                        <div class="color-para">
+                                            <p class="target-head">Overall Targets Achieved</p>
+                                        </div>
+                                        <p class="target-percent">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YEAR TAB END -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="box-top-bar">
+                            <div class="top-bar-left">
+                                <div class="icon">
+                                    <img src="./images/location.svg" alt="">
+                                </div>
+                                <h6>Regional Performance</h6>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="map">
+                            <!-- <div id="mumbaiMap"></div> -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
+                                width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map-select-row">
+                            <input type="text" class="location-input" placeholder="Location">
+                            <select id="mumbailocation">
+                                <option value="dataset1">All Locations, Mumbai</option>
+                                <option value="dataset2">Bandra</option>
+                                <option value="dataset3">Dadar</option>
+                            </select>
+                            <input type="text" placeholder="Total Sales: 50Cr" class="totalSales" readonly>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Bandra</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Carter Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Rohan Agarwal</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">5 Cr</p>
+                            </div>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Bandra</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Hill Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Sohan Agarwal</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">15 Cr</p>
+                            </div>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Dadar</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Carter Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Mohan Agarwal</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">20 Cr</p>
+                            </div>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Bandra</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Carter Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Arjun</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">10 Cr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PUNE MODAL -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="puneModal" tabindex="-1" aria-labelledby="puneModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="box-top-bar">
+                            <div class="top-bar-left">
+                                <div class="icon">
+                                    <img src="./images/location.svg" alt="">
+                                </div>
+                                <h6>Regional Performance</h6>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="map">
+                            <!-- <div id="mumbaiMap"></div> -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70906421894!2d73.69814960406003!3d18.52487061465784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739167276215!5m2!1sen!2sin"
+                                width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map-select-row">
+                            <input type="text" class="location-input" placeholder="Location">
+                            <select id="mumbailocation">
+                                <option value="dataset1">All Locations, Pune</option>
+                                <option value="dataset2">Kharadi</option>
+                                <option value="dataset3">Kothrud</option>
+                            </select>
+                            <input type="text" placeholder="Total Sales: 40Cr" class="totalSales" readonly>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Kharadi</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Civil Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Arjun</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">20 Cr</p>
+                            </div>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Kothrud</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Hill Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Harsh</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">10 Cr</p>
+                            </div>
+                        </div>
+
+                        <div class="team-list">
+                            <div class="team-box">
+                                <p class="black">Hadapsar</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Carter Road</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="grey">Abhilash</p>
+                            </div>
+
+                            <div class="team-box">
+                                <p class="black">10 Cr</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script> -->
+    <script>
+        // setup 
+        const dataMonth = {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            datasets: [
+
+                {
+                    type: "line",
+                    label: "Ai Projection",
+                    data: [150, 175, 163, 163, 225, 240, 210, 250, 175],
+                    borderColor: '#FFAE12',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Mumbai',
+                    data: [60, 60, 60, 60, 60, 60, 60, 60, 60],
+                    backgroundColor: [
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                    maxWidth: 10,
+                    maxHeight: 10
+
+                },
+                {
+                    label: 'Pune',
+                    data: [10, 90, 60, 50, 10, 90, 30, 65, 45],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Banglore',
+                    data: [95, 20, 83, 87, 44, 69, 33, 45, 27],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Hyderabad',
+                    data: [63, 55, 32, 78, 81, 45, 49, 75, 49],
+                    backgroundColor: [
+                        'rgba(217, 13, 50, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configMonth = {
+            type: 'bar',
+            data: dataMonth,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChart = new Chart(
+            document.getElementById('myChartMonth'),
+            configMonth
+        );
+
+
+
+        // Instantly assign Chart.js version
+        const chartVersion = document.getElementById('chartVersion');
+        chartVersion.innerText = Chart.version;
+    </script>
+
+    <script>
+        const dataSales = {
+            labels: [
+                'Disbursement Amount',
+                'Sanction Amount'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [80, 80],
+                backgroundColor: [
+                    'rgba(27, 101, 166, 1)',
+                    'rgba(217, 13, 50, 1)'
+                ],
+                // hoverOffset: 100,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const options = {
+            plugins: {
+                legend: {
+                    display: false // Hides the legend
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const doughnutLabel = {
+            id: 'doughnutLabel',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('160', xCoor, yCoor);
+            }
+        }
+
+        const configSales = {
+            type: 'doughnut',
+            data: dataSales,
+            options: options,
+            plugins: [doughnutLabel]
+        };
+
+        const mysalesMonth = new Chart(
+            document.getElementById('mysalesMonth'),
+            configSales
+        );
+
+
+    </script>
+
+    <script>
+        const dataSalesCounts = {
+            labels: [
+                'Login Count',
+                'Lead Count'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [200, 600],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)'
+                ],
+
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const optionscounts = {
+            plugins: {
+                legend: {
+                    display: false // Hides the legend
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const doughnutLabelcounts = {
+            id: 'doughnutLabelcounts',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('800', xCoor, yCoor);
+            }
+        }
+
+        const configSalescounts = {
+            type: 'doughnut',
+            data: dataSalesCounts,
+            options: optionscounts,
+            plugins: [doughnutLabelcounts]
+        };
+
+        const mysalescounts = new Chart(
+            document.getElementById('mysalescounts'),
+            configSalescounts
+        );
+
+
+    </script>
+
+    <script>
+        const xValues = ['week1', 'week2', 'week3', 'week4'];
+
+        new Chart("mykpiMonth", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    data: [860, 1140, 1060, 1060],
+                    borderColor: "red",
+                    fill: false,
+                    borderWidth: 2,
+                }, {
+                    data: [1600, 1700, 1700, 1900],
+                    borderColor: "green",
+                    fill: false,
+                    borderWidth: 2,
+                }, {
+                    data: [300, 700, 2000, 5000],
+                    borderColor: "blue",
+                    fill: false,
+                    borderWidth: 2,
+                }]
+            },
+            options: {
+                scales: {
+
+                    y: {
+                        display: false
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Hides the legend
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- MUMBAI MAP START -->
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("mumbaiMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    <!-- MUMBAI MAP END -->
+
+    <script>
+        const targetData = {
+            labels: [
+                'Achieved',
+                'Pending'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [200, 600],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcount = {
+            plugins: {
+
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcounts = {
+            id: 'targetcounts',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('50Cr', xCoor, yCoor);
+            }
+        }
+
+        const configTarget = {
+            type: 'doughnut',
+            data: targetData,
+            options: targetcount,
+            // plugins: [targetcounts]
+            plugins: [targetcounts]
+
+        };
+
+        const target = new Chart(
+            document.getElementById('targetMonth'),
+            configTarget
+        );
+
+
+    </script>
+
+    <script>
+        const resizeBtn = document.querySelector("[data-resize-btn]");
+
+        resizeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.body.classList.toggle("sb-expanded");
+        });
+    </script>
+
+    <!-- QUARTER SCRIPT START -->
+    <script>
+        // setup 
+        const dataqaurter = {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            datasets: [
+
+                {
+                    type: "line",
+                    label: "Ai Projection",
+                    data: [163, 175, 150, 200, 225, 220, 170, 90, 275],
+                    borderColor: '#FFAE12',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Mumbai',
+                    data: [30, 50, 40, 70, 90, 20, 40, 50, 75],
+                    backgroundColor: [
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                    maxWidth: 10,
+                    maxHeight: 10
+
+                },
+                {
+                    label: 'Pune',
+                    data: [20, 30, 25, 34, 55, 45, 10, 25, 65],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Banglore',
+                    data: [35, 20, 51, 57, 64, 49, 21, 23, 38],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Hyderabad',
+                    data: [43, 55, 23, 87, 18, 54, 94, 57, 94],
+                    backgroundColor: [
+                        'rgba(217, 13, 50, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configquarter = {
+            type: 'bar',
+            data: dataqaurter,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChartquarter = new Chart(
+            document.getElementById('myChartquarter'),
+            configquarter
+        );
+
+
+
+        // Instantly assign Chart.js version
+        // const chartVersion = document.getElementById('chartVersion');
+        // chartVersion.innerText = Chart.version;
+    </script>
+
+    <script>
+        const dataSalesquarter = {
+            labels: [
+                'Disbursement Amount',
+                'Sanction Amount'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [150, 50],
+                backgroundColor: [
+                    'rgba(27, 101, 166, 1)',
+                    'rgba(217, 13, 50, 1)'
+                ],
+                // hoverOffset: 100,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const optionsquarter = {
+            plugins: {
+                legend: {
+                    display: false // Hides the legend
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const doughnutLabelquarter = {
+            id: 'doughnutLabelquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('200', xCoor, yCoor);
+            }
+        }
+
+        const configSalesquarter = {
+            type: 'doughnut',
+            data: dataSalesquarter,
+            options: optionsquarter,
+            plugins: [doughnutLabelquarter]
+        };
+
+        const mysalesquarter = new Chart(
+            document.getElementById('mysalesquarter'),
+            configSalesquarter
+        );
+
+
+    </script>
+
+    <script>
+        const dataSalesCountsquarter = {
+            labels: [
+                'Login Count',
+                'Lead Count'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [185, 215],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)'
+                ],
+
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const optionscountsquarter = {
+            plugins: {
+                legend: {
+                    display: false // Hides the legend
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const doughnutLabelcountsquarter = {
+            id: 'doughnutLabelcountsquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('300', xCoor, yCoor);
+            }
+        }
+
+        const configSalescountsquarter = {
+            type: 'doughnut',
+            data: dataSalesCountsquarter,
+            options: optionscountsquarter,
+            plugins: [doughnutLabelcountsquarter]
+        };
+
+        const mysalescountsquarter = new Chart(
+            document.getElementById('mysalescountsquarter'),
+            configSalescountsquarter
+        );
+
+
+    </script>
+
+    <script>
+        const xValuesquarter = ['week1', 'week2', 'week3', 'week4'];
+
+        new Chart("mykpiquarter", {
+            type: "line",
+            data: {
+                labels: xValuesquarter,
+                datasets: [{
+                    data: [750, 1200, 1260, 1100],
+                    borderColor: "red",
+                    fill: false,
+                    borderWidth: 2,
+                }, {
+                    data: [1200, 650, 1300, 2100],
+                    borderColor: "green",
+                    fill: false,
+                    borderWidth: 2,
+                }, {
+                    data: [200, 500, 1700, 2000],
+                    borderColor: "blue",
+                    fill: false,
+                    borderWidth: 2,
+                }]
+            },
+            options: {
+                scales: {
+
+                    y: {
+                        display: false
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Hides the legend
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        const targetDataquarter = {
+            labels: [
+                'Achieved',
+                'Pending'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [200, 150],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountquarter = {
+            plugins: {
+
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsquarter = {
+            id: 'targetcountsquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('350Cr', xCoor, yCoor);
+            }
+        }
+
+        const configTargetquarter = {
+            type: 'doughnut',
+            data: targetDataquarter,
+            options: targetcountquarter,
+            // plugins: [targetcounts]
+            plugins: [targetcountsquarter]
+
+        };
+
+        const targetquarter = new Chart(
+            document.getElementById('targetquarter'),
+            configTargetquarter
+        );
+
+
+    </script>
+    <!-- QUARTER SCRIPT END -->
+
+
+    <!-- YEAR SCRIPT START -->
+
+    <script>
+        // setup 
+        const datayear = {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            datasets: [
+
+                {
+                    type: "line",
+                    label: "Ai Projection",
+                    data: [123, 135, 100, 240, 215, 170, 150, 275, 142],
+                    borderColor: '#FFAE12',
+                    lineTension: 0,
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Mumbai',
+                    data: [20, 30, 25, 34, 55, 45, 10, 25, 65],
+                    backgroundColor: [
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                    maxWidth: 10,
+                    maxHeight: 10
+
+                },
+                {
+                    label: 'Pune',
+                    data: [30, 50, 40, 70, 90, 20, 40, 50, 75],
+                    backgroundColor: [
+                        'rgba(74, 175, 217, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Banglore',
+                    data: [43, 55, 23, 87, 18, 54, 94, 57, 94],
+                    backgroundColor: [
+                        'rgba(27, 101, 166, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                },
+                {
+                    label: 'Hyderabad',
+                    data: [35, 20, 51, 57, 64, 49, 21, 23, 38],
+                    backgroundColor: [
+                        'rgba(217, 13, 50, 1)',
+                    ],
+                    borderColor: "transparent",
+                    borderWidth: 1,
+                    borderRadius: {
+                        topLeft: 10,
+                        topRight: 10,
+                        bottomLeft: 10,
+                        bottomRight: 10,
+                    },
+                    borderSkipped: false,
+                }
+            ]
+        };
+
+        // config 
+        const configyear = {
+            type: 'bar',
+            data: datayear,
+            options: {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true
+                    }
+
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        };
+
+        // render init block
+        const myChartyear = new Chart(
+            document.getElementById('myChartyear'),
+            configyear
+        );
+
+
+
+        // Instantly assign Chart.js version
+        // const chartVersion = document.getElementById('chartVersion');
+        // chartVersion.innerText = Chart.version;
+    </script>
+
+    <script>
+        const dataSalesyear = {
+            labels: [
+                'Disbursement Amount',
+                'Sanction Amount'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [315, 235],
+                backgroundColor: [
+                    'rgba(27, 101, 166, 1)',
+                    'rgba(217, 13, 50, 1)'
+                ],
+                // hoverOffset: 100,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const optionsyear = {
+            plugins: {
+                legend: {
+                    display: false // Hides the legend
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const doughnutLabelyear = {
+            id: 'doughnutLabelyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('800', xCoor, yCoor);
+            }
+        }
+
+        const configSalesyear = {
+            type: 'doughnut',
+            data: dataSalesyear,
+            options: optionsyear,
+            plugins: [doughnutLabelyear]
+        };
+
+        const mysalesyear = new Chart(
+            document.getElementById('mysalesyear'),
+            configSalesyear
+        );
+
+
+    </script>
+
+    <script>
+        const dataSalesCountsyear = {
+            labels: [
+                'Login Count',
+                'Lead Count'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [185, 215],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)'
+                ],
+
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const optionscountsyear = {
+            plugins: {
+                legend: {
+                    display: false // Hides the legend
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const doughnutLabelcountsyear = {
+            id: 'doughnutLabelcountsyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('550', xCoor, yCoor);
+            }
+        }
+
+        const configSalescountsyear = {
+            type: 'doughnut',
+            data: dataSalesCountsyear,
+            options: optionscountsyear,
+            plugins: [doughnutLabelcountsyear]
+        };
+
+        const mysalescountsyear = new Chart(
+            document.getElementById('mysalescountsyear'),
+            configSalescountsyear
+        );
+
+
+    </script>
+
+    <script>
+        const xValuesyear = ['week1', 'week2', 'week3', 'week4'];
+
+        new Chart("mykpiyear", {
+            type: "line",
+            data: {
+                labels: xValuesyear,
+                datasets: [{
+                    data: [1600, 1700, 1700, 1900],
+                    borderColor: "red",
+                    fill: false,
+                    borderWidth: 2,
+                }, {
+                    data: [300, 700, 2000, 5000],
+                    borderColor: "green",
+                    fill: false,
+                    borderWidth: 2,
+                }, {
+                    data: [860, 1140, 1060, 1060],
+                    borderColor: "blue",
+                    fill: false,
+                    borderWidth: 2,
+                }]
+            },
+            options: {
+                scales: {
+
+                    y: {
+                        display: false
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Hides the legend
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        const targetDatayear = {
+            labels: [
+                'Achieved',
+                'Pending'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [500, 300],
+                backgroundColor: [
+                    'rgba(30, 29, 63, 1)',
+                    'rgba(74, 175, 217, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 10,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountyear = {
+            plugins: {
+
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsyear = {
+            id: 'targetcountsyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('850Cr', xCoor, yCoor);
+            }
+        }
+
+        const configTargetyear = {
+            type: 'doughnut',
+            data: targetDatayear,
+            options: targetcountyear,
+            // plugins: [targetcounts]
+            plugins: [targetcountsyear]
+
+        };
+
+        const targetyear = new Chart(
+            document.getElementById('targetyear'),
+            configTargetyear
+        );
+
+
+    </script>
+
+
+
+    <!-- YEAR SCRIPT END -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
