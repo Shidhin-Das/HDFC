@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard</title>
+    <title>Performance Overview</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resposnive.css">
     <link rel="stylesheet" href="css/sidebar-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
@@ -119,29 +120,32 @@
                     <div class="select-div">
                         <div class="branch-role-region">
                             <select id="Branch">
-                                <option value="dataset1">Branch 1</option>
-                                <option value="dataset2">Branch 2</option>
-                                <option value="dataset3">Branch 3</option>
+                                <option value="Branch1">Mumbai</option>
+                                <option value="Branch2">Pune</option>
+                                <option value="Branch3">Bangalore</option>
+                                <option value="Branch3">Hyderabad</option>
                             </select>
                             <div class="vl one"></div>
                             <select id="Role">
-                                <option value="dataset1">Role 1</option>
-                                <option value="dataset2">Role 2</option>
-                                <option value="dataset3">Role 3</option>
+                                <option value="Role1">RBH</option>
+                                <option value="Role2">RSM</option>
+                                <option value="Role3">AM</option>
+                                <option value="Role3">TM</option>
                             </select>
                             <div class="vl two"></div>
                             <select id="Region">
-                                <option value="dataset1">Region 1</option>
-                                <option value="dataset2">Region 2</option>
-                                <option value="dataset3">Region 3</option>
+                                <option value="Region1">West</option>
+                                <option value="Region2">East</option>
+                                <option value="Region3">North</option>
+                                <option value="Region4">South</option>
                             </select>
                         </div>
 
                         <div class="kpi-select">
                             <select id="Kpi">
-                                <option value="dataset1">Select KPI</option>
-                                <option value="dataset2">Select KPI</option>
-                                <option value="dataset3">Select KPI</option>
+                                <option value="dataset1">KPI 1</option>
+                                <option value="dataset2">KPI 2</option>
+                                <option value="dataset3">KPI 3</option>
                             </select>
                         </div>
 
@@ -232,10 +236,10 @@
 
                                 <div class="top-bar-right">
                                     <div class="kpi-select">
-                                        <select id="Kpi">
-                                            <option value="dataset1">All KPIs</option>
-                                            <option value="dataset2">Select KPI</option>
-                                            <option value="dataset3">Select KPI</option>
+                                        <select id="salesoverviewselect">
+                                            <option value="salesoverview1">All KPIs</option>
+                                            <option value="salesoverview2">Select KPI</option>
+                                            <option value="salesoverview3">Select KPI</option>
                                         </select>
                                     </div>
                                 </div>
@@ -244,7 +248,7 @@
                             <div class="sales-chart">
                                 <div class="salesCard">
                                     <div class="salesBox">
-                                        <canvas id="mysalesMonth"></canvas>
+                                        <canvas id="salesoverviewmonthone"></canvas>
                                     </div>
 
                                     <div class="sales-box-col">
@@ -253,14 +257,14 @@
                                                 <div class="color-box red"></div>
                                                 <p>Disbursement Amount</p>
                                             </div>
-                                            <p>80cr</p>
+                                            <p>20cr</p>
                                         </div>
                                         <div class="sales-boxes">
                                             <div class="color-para">
                                                 <div class="color-box db"></div>
                                                 <p>Sanction Amount</p>
                                             </div>
-                                            <p>80cr</p>
+                                            <p>30cr</p>
                                         </div>
                                     </div>
 
@@ -268,23 +272,23 @@
 
                                 <div class="salesCard">
                                     <div class="salesBox">
-                                        <canvas id="mysalescounts"></canvas>
+                                        <canvas id="salesoverviewmonthtwo"></canvas>
                                     </div>
 
                                     <div class="sales-box-col">
                                         <div class="sales-boxes">
                                             <div class="color-para">
-                                                <div class="color-box red"></div>
+                                                <div class="color-box login"></div>
                                                 <p>Login Count</p>
                                             </div>
-                                            <p>200</p>
+                                            <p>35</p>
                                         </div>
                                         <div class="sales-boxes">
                                             <div class="color-para">
-                                                <div class="color-box db"></div>
+                                                <div class="color-box lead"></div>
                                                 <p>Lead Count</p>
                                             </div>
-                                            <p>600</p>
+                                            <p>65</p>
                                         </div>
                                     </div>
                                 </div>
@@ -305,10 +309,10 @@
 
                                 <div class="top-bar-right">
                                     <div class="kpi-select">
-                                        <select id="KpiTrends">
-                                            <option value="dataset1">Select KPI</option>
-                                            <option value="dataset2">Select KPI</option>
-                                            <option value="dataset3">Select KPI</option>
+                                        <select id="KpiTrendmonthselect">
+                                            <option value="kpitrendmonth1">KPI 1</option>
+                                            <option value="kpitrendmonth2">KPI 2</option>
+                                            <option value="kpitrendmonth3">KPI 3</option>
                                         </select>
                                     </div>
                                 </div>
@@ -316,8 +320,8 @@
 
                             <div class="kpi-graph">
                                 <div class="kpiCard">
-                                    <div class="kpiBox">
-                                        <canvas id="mykpiMonth"></canvas>
+                                    <div class="kpiBox kpi-pb">
+                                        <canvas id="mykpiMonthgraph"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -370,10 +374,11 @@
 
                             <div class="map">
                                 <!-- <div id="mumbaiMap"></div> -->
-                                <iframe
+                                <!-- <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
                                     width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                <div id="map"></div>
                             </div>
 
                             <div class="location-scroll">
@@ -521,10 +526,10 @@
 
                                 <div class="top-bar-right">
                                     <div class="kpi-select">
-                                        <select id="Kpi">
-                                            <option value="dataset1">All KPIs</option>
-                                            <option value="dataset2">Select KPI</option>
-                                            <option value="dataset3">Select KPI</option>
+                                        <select id="salesoverviewselectquarter">
+                                            <option value="salesoverviewquarter1">All KPIs</option>
+                                            <option value="salesoverviewquarter2">Select KPI</option>
+                                            <option value="salesoverviewquarter3">Select KPI</option>
                                         </select>
                                     </div>
                                 </div>
@@ -533,7 +538,7 @@
                             <div class="sales-chart">
                                 <div class="salesCard">
                                     <div class="salesBox">
-                                        <canvas id="mysalesquarter"></canvas>
+                                        <canvas id="salesoverviewquarterone"></canvas>
                                     </div>
 
                                     <div class="sales-box-col">
@@ -557,23 +562,23 @@
 
                                 <div class="salesCard">
                                     <div class="salesBox">
-                                        <canvas id="mysalescountsquarter"></canvas>
+                                        <canvas id="salesoverviewquartertwo"></canvas>
                                     </div>
 
                                     <div class="sales-box-col">
                                         <div class="sales-boxes">
                                             <div class="color-para">
-                                                <div class="color-box red"></div>
+                                                <div class="color-box login"></div>
                                                 <p>Login Count</p>
                                             </div>
-                                            <p>185</p>
+                                            <p>115</p>
                                         </div>
                                         <div class="sales-boxes">
                                             <div class="color-para">
-                                                <div class="color-box db"></div>
+                                                <div class="color-box lead"></div>
                                                 <p>Lead Count</p>
                                             </div>
-                                            <p>215</p>
+                                            <p>185</p>
                                         </div>
                                     </div>
                                 </div>
@@ -593,10 +598,10 @@
 
                                 <div class="top-bar-right">
                                     <div class="kpi-select">
-                                        <select id="KpiTrends">
-                                            <option value="dataset1">Select KPI</option>
-                                            <option value="dataset2">Select KPI</option>
-                                            <option value="dataset3">Select KPI</option>
+                                        <select id="KpiTrendquarterselect">
+                                            <option value="kpitrendquarter1">KPI 1</option>
+                                            <option value="kpitrendquarter2">KPI 2</option>
+                                            <option value="kpitrendquarter3">KPI 3</option>
                                         </select>
                                     </div>
                                 </div>
@@ -605,7 +610,7 @@
                             <div class="kpi-graph">
                                 <div class="kpiCard">
                                     <div class="kpiBox">
-                                        <canvas id="mykpiquarter"></canvas>
+                                        <canvas id="mykpiquartergraph"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -658,10 +663,7 @@
 
                             <div class="map">
                                 <!-- <div id="mumbaiMap"></div> -->
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
-                                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div id="mapquarter"></div>
                             </div>
 
                             <div class="location-scroll">
@@ -669,7 +671,7 @@
                                     <div class="location-text">
                                         <p class="area">Mumbai | 4 Locations</p>
                                         <p class="area-incharge">Rohan Kumar | Abhishek Jain | Ravi Gill</p>
-                                        <p class="amt">50 Cr</p>
+                                        <p class="amt">200 Cr</p>
                                     </div>
 
                                     <div class="location-btn">
@@ -685,7 +687,7 @@
                                     <div class="location-text">
                                         <p class="area">Pune | 3 Locations</p>
                                         <p class="area-incharge">Arjun | Harsh | Abhilash</p>
-                                        <p class="amt">40Cr</p>
+                                        <p class="amt">300Cr</p>
                                     </div>
 
                                     <div class="location-btn">
@@ -805,10 +807,10 @@
 
                                 <div class="top-bar-right">
                                     <div class="kpi-select">
-                                        <select id="Kpi">
-                                            <option value="dataset1">All KPIs</option>
-                                            <option value="dataset2">Select KPI</option>
-                                            <option value="dataset3">Select KPI</option>
+                                        <select id="salesoverviewselectyear">
+                                            <option value="salesoverviewyear1">All KPIs</option>
+                                            <option value="salesoverviewyear2">Select KPI</option>
+                                            <option value="salesoverviewyear3">Select KPI</option>
                                         </select>
                                     </div>
                                 </div>
@@ -817,7 +819,7 @@
                             <div class="sales-chart">
                                 <div class="salesCard">
                                     <div class="salesBox">
-                                        <canvas id="mysalesyear"></canvas>
+                                        <canvas id="salesoverviewyearone"></canvas>
                                     </div>
 
                                     <div class="sales-box-col">
@@ -826,14 +828,14 @@
                                                 <div class="color-box red"></div>
                                                 <p>Disbursement Amount</p>
                                             </div>
-                                            <p>235 cr</p>
+                                            <p>375 cr</p>
                                         </div>
                                         <div class="sales-boxes">
                                             <div class="color-para">
                                                 <div class="color-box db"></div>
                                                 <p>Sanction Amount</p>
                                             </div>
-                                            <p>315 cr</p>
+                                            <p>125 cr</p>
                                         </div>
                                     </div>
 
@@ -841,23 +843,23 @@
 
                                 <div class="salesCard">
                                     <div class="salesBox">
-                                        <canvas id="mysalescountsyear"></canvas>
+                                        <canvas id="salesoverviewyeartwo"></canvas>
                                     </div>
 
                                     <div class="sales-box-col">
                                         <div class="sales-boxes">
                                             <div class="color-para">
-                                                <div class="color-box red"></div>
+                                                <div class="color-box login"></div>
                                                 <p>Login Count</p>
                                             </div>
-                                            <p>185</p>
+                                            <p>400</p>
                                         </div>
                                         <div class="sales-boxes">
                                             <div class="color-para">
-                                                <div class="color-box db"></div>
+                                                <div class="color-box lead"></div>
                                                 <p>Lead Count</p>
                                             </div>
-                                            <p>215</p>
+                                            <p>800</p>
                                         </div>
                                     </div>
                                 </div>
@@ -877,10 +879,10 @@
 
                                 <div class="top-bar-right">
                                     <div class="kpi-select">
-                                        <select id="KpiTrends">
-                                            <option value="dataset1">Select KPI</option>
-                                            <option value="dataset2">Select KPI</option>
-                                            <option value="dataset3">Select KPI</option>
+                                        <select id="KpiTrendyearselect">
+                                            <option value="kpitrendyear1">KPI 1</option>
+                                            <option value="kpitrendyear2">KPI 2</option>
+                                            <option value="kpitrendyear3">KPI 3</option>
                                         </select>
                                     </div>
                                 </div>
@@ -889,7 +891,7 @@
                             <div class="kpi-graph">
                                 <div class="kpiCard">
                                     <div class="kpiBox">
-                                        <canvas id="mykpiyear"></canvas>
+                                        <canvas id="mykpiyeargraph"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -942,10 +944,7 @@
 
                             <div class="map">
                                 <!-- <div id="mumbaiMap"></div> -->
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
-                                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div id="mapyear"></div>
                             </div>
 
                             <div class="location-scroll">
@@ -953,7 +952,7 @@
                                     <div class="location-text">
                                         <p class="area">Mumbai | 4 Locations</p>
                                         <p class="area-incharge">Rohan Kumar | Abhishek Jain | Ravi Gill</p>
-                                        <p class="amt">50 Cr</p>
+                                        <p class="amt">500 Cr</p>
                                     </div>
 
                                     <div class="location-btn">
@@ -969,7 +968,7 @@
                                     <div class="location-text">
                                         <p class="area">Pune | 3 Locations</p>
                                         <p class="area-incharge">Arjun | Harsh | Abhilash</p>
-                                        <p class="amt">40Cr</p>
+                                        <p class="amt">600Cr</p>
                                     </div>
 
                                     <div class="location-btn">
@@ -1037,10 +1036,11 @@
                     <div class="modal-body">
                         <div class="map">
                             <!-- <div id="mumbaiMap"></div> -->
-                            <iframe
+                            <!-- <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60313.6297477753!2d72.83122653445554!3d19.125114580656003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8081c1d7b43%3A0xbaf100c54b8be366!2sPowai%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739008625319!5m2!1sen!2sin"
                                 width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            <div id="mumbaimap"></div>
                         </div>
 
                         <div class="map-select-row">
@@ -1149,11 +1149,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="map">
-                            <!-- <div id="mumbaiMap"></div> -->
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70906421894!2d73.69814960406003!3d18.52487061465784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1739167276215!5m2!1sen!2sin"
-                                width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div id="puneMap"></div>
                         </div>
 
                         <div class="map-select-row">
@@ -1228,23 +1224,24 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script> -->
+     
     <script>
         // setup 
         const dataMonth = {
-            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
             datasets: [
 
                 {
                     type: "line",
                     label: "Ai Projection",
-                    data: [150, 175, 163, 163, 225, 240, 210, 250, 175],
+                    data: [650000, 950000, 1005000, 750000],
                     borderColor: '#FFAE12',
                     lineTension: 0,
                     borderWidth: 2,
                     fill: false
                 }, {
                     label: 'Mumbai',
-                    data: [60, 60, 60, 60, 60, 60, 60, 60, 60],
+                    data: [200000, 120000, 600000, 300000],
                     backgroundColor: [
                         'rgba(0, 0, 0, 1)',
                     ],
@@ -1263,7 +1260,7 @@
                 },
                 {
                     label: 'Pune',
-                    data: [10, 90, 60, 50, 10, 90, 30, 65, 45],
+                    data: [200000, 380000, 200000, 250000],
                     backgroundColor: [
                         'rgba(74, 175, 217, 1)',
                     ],
@@ -1279,7 +1276,7 @@
                 },
                 {
                     label: 'Banglore',
-                    data: [95, 20, 83, 87, 44, 69, 33, 45, 27],
+                    data: [300000, 240000, 100000, 250000],
                     backgroundColor: [
                         'rgba(27, 101, 166, 1)',
                     ],
@@ -1295,7 +1292,7 @@
                 },
                 {
                     label: 'Hyderabad',
-                    data: [63, 55, 32, 78, 81, 45, 49, 75, 49],
+                    data: [100000, 310000, 100000, 300000],
                     backgroundColor: [
                         'rgba(217, 13, 50, 1)',
                     ],
@@ -1320,13 +1317,42 @@
                 scales: {
                     x: {
                         stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    x2: {
+                        labels: ['Feb'],
                     },
                     y: {
                         stacked: true,
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            // maxTicksLimit:3,
+                            callback: ((context, index) => {
+                                let responseymonth;
+                                if (context === 200000) {
+                                    responseymonth = '₹2L'
+                                } else if (context === 400000) {
+                                    responseymonth = '₹4L'
+                                } else if (context === 600000) {
+                                    responseymonth = '₹6L'
+                                } else if (context === 800000) {
+                                    responseymonth = '₹8L'
+                                } else if (context === 1000000) {
+                                    responseymonth = '₹10L'
+                                } else if (context === 1200000) {
+                                    responseymonth = '₹12L'
+                                } else {
+                                    responseymonth = '0'
+                                }
+                                return responseymonth
+                            })
+                        }
                     }
 
                 },
+                barThickness: 40,
                 plugins: {
                     legend: {
                         display: false
@@ -1348,7 +1374,7 @@
         chartVersion.innerText = Chart.version;
     </script>
 
-    <script>
+    <!-- <script>
         const dataSales = {
             labels: [
                 'Disbursement Amount',
@@ -1407,7 +1433,7 @@
         );
 
 
-    </script>
+    </script> -->
 
     <script>
         const dataSalesCounts = {
@@ -1470,7 +1496,7 @@
 
     </script>
 
-    <script>
+    <!-- <script>
         const xValues = ['week1', 'week2', 'week3', 'week4'];
 
         new Chart("mykpiMonth", {
@@ -1508,7 +1534,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
 
     <!-- MUMBAI MAP START -->
 
@@ -1533,14 +1559,13 @@
                 'Pending'
             ],
             datasets: [{
-                label: 'My First Dataset',
-                data: [200, 600],
+                data: [63, 37],
                 backgroundColor: [
-                    'rgba(30, 29, 63, 1)',
-                    'rgba(74, 175, 217, 1)'
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
                 ],
                 // hoverOffset: 4,
-                borderWidth: 10,
+                borderWidth: 3,
                 borderRadius: 8
             }]
         };
@@ -1562,11 +1587,11 @@
 
                 const xCoor = chart.getDatasetMeta(0).data[0].x;
                 const yCoor = chart.getDatasetMeta(0).data[0].y;
-                ctx.font = 'bold 16px Inter';
+                ctx.font = '500 16px Inter';
                 ctx.fillStyle = '#151A24';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle',
-                    ctx.fillText('50Cr', xCoor, yCoor);
+                    ctx.fillText('100Cr', xCoor, yCoor);
             }
         }
 
@@ -1600,20 +1625,20 @@
     <script>
         // setup 
         const dataqaurter = {
-            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            labels: ['Q1', 'Q2', 'Q3', 'Q4'],
             datasets: [
 
                 {
                     type: "line",
                     label: "Ai Projection",
-                    data: [163, 175, 150, 200, 225, 220, 170, 90, 275],
+                    data: [1600000, 1900000, 2400000, 1700000],
                     borderColor: '#FFAE12',
                     lineTension: 0,
                     borderWidth: 2,
                     fill: false
                 }, {
                     label: 'Mumbai',
-                    data: [30, 50, 40, 70, 90, 20, 40, 50, 75],
+                    data: [800000, 600000, 450000, 350000],
                     backgroundColor: [
                         'rgba(0, 0, 0, 1)',
                     ],
@@ -1632,7 +1657,7 @@
                 },
                 {
                     label: 'Pune',
-                    data: [20, 30, 25, 34, 55, 45, 10, 25, 65],
+                    data: [600000, 550000, 700000, 500000],
                     backgroundColor: [
                         'rgba(74, 175, 217, 1)',
                     ],
@@ -1648,7 +1673,7 @@
                 },
                 {
                     label: 'Banglore',
-                    data: [35, 20, 51, 57, 64, 49, 21, 23, 38],
+                    data: [500000, 650000, 500000, 570000],
                     backgroundColor: [
                         'rgba(27, 101, 166, 1)',
                     ],
@@ -1664,7 +1689,7 @@
                 },
                 {
                     label: 'Hyderabad',
-                    data: [43, 55, 23, 87, 18, 54, 94, 57, 94],
+                    data: [400000, 500000, 550000, 800000],
                     backgroundColor: [
                         'rgba(217, 13, 50, 1)',
                     ],
@@ -1689,13 +1714,37 @@
                 scales: {
                     x: {
                         stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
                     },
                     y: {
                         stacked: true,
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            // maxTicksLimit:3,
+                            callback: ((context, index) => {
+                                let responseyquarter;
+                                if (context === 500000) {
+                                    responseyquarter = '₹5L'
+                                } else if (context === 1000000) {
+                                    responseyquarter = '₹10L'
+                                } else if (context === 1500000) {
+                                    responseyquarter = '₹15L'
+                                } else if (context === 2000000) {
+                                    responseyquarter = '₹20L'
+                                } else if (context === 2500000) {
+                                    responseyquarter = '₹25L'
+                                } else {
+                                    responseyquarter = '0'
+                                }
+                                return responseyquarter
+                            })
+                        }
                     }
 
                 },
+                barThickness: 40,
                 plugins: {
                     legend: {
                         display: false
@@ -1839,7 +1888,7 @@
 
     </script>
 
-    <script>
+    <!-- <script>
         const xValuesquarter = ['week1', 'week2', 'week3', 'week4'];
 
         new Chart("mykpiquarter", {
@@ -1877,7 +1926,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
 
     <script>
         const targetDataquarter = {
@@ -1887,13 +1936,13 @@
             ],
             datasets: [{
                 label: 'My First Dataset',
-                data: [200, 150],
+                data: [350, 150],
                 backgroundColor: [
                     'rgba(30, 29, 63, 1)',
                     'rgba(74, 175, 217, 1)'
                 ],
                 // hoverOffset: 4,
-                borderWidth: 10,
+                borderWidth: 3,
                 borderRadius: 8
             }]
         };
@@ -1915,11 +1964,11 @@
 
                 const xCoor = chart.getDatasetMeta(0).data[0].x;
                 const yCoor = chart.getDatasetMeta(0).data[0].y;
-                ctx.font = 'bold 16px Inter';
+                ctx.font = '500 16px Inter';
                 ctx.fillStyle = '#151A24';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle',
-                    ctx.fillText('350Cr', xCoor, yCoor);
+                    ctx.fillText('500Cr', xCoor, yCoor);
             }
         }
 
@@ -1947,20 +1996,20 @@
     <script>
         // setup 
         const datayear = {
-            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
             datasets: [
 
                 {
                     type: "line",
                     label: "Ai Projection",
-                    data: [123, 135, 100, 240, 215, 170, 150, 275, 142],
+                    data: [5300000, 6600000, 7500000, 5500000, 5900000, 6300000, 6900000, 8700000, 7000000, 6300000, 8800000, 7500000],
                     borderColor: '#FFAE12',
                     lineTension: 0,
                     borderWidth: 2,
                     fill: false
                 }, {
                     label: 'Mumbai',
-                    data: [20, 30, 25, 34, 55, 45, 10, 25, 65],
+                    data: [2300000, 2300000, 1800000, 2200000, 1600000, 2800000, 2700000, 5500000, 3400000, 1500000, 3000000, 2000000],
                     backgroundColor: [
                         'rgba(0, 0, 0, 1)',
                     ],
@@ -1979,7 +2028,7 @@
                 },
                 {
                     label: 'Pune',
-                    data: [30, 50, 40, 70, 90, 20, 40, 50, 75],
+                    data: [1900000, 2300000, 2200000, 1200000, 1800000, 2300000, 4000000, 2000000, 2000000, 3000000, 1000000, 2000000, 2500000],
                     backgroundColor: [
                         'rgba(74, 175, 217, 1)',
                     ],
@@ -1995,7 +2044,7 @@
                 },
                 {
                     label: 'Banglore',
-                    data: [43, 55, 23, 87, 18, 54, 94, 57, 94],
+                    data: [1300000, 1800000, 1600000, 1200000, 507000, 940000, 1800000, 1800000, 1500000, 2300000, 2500000, 2000000],
                     backgroundColor: [
                         'rgba(27, 101, 166, 1)',
                     ],
@@ -2011,7 +2060,7 @@
                 },
                 {
                     label: 'Hyderabad',
-                    data: [35, 20, 51, 57, 64, 49, 21, 23, 38],
+                    data: [1300000, 1000000, 1700000, 2500000, 1100000, 2100000, 1300000, 600000, 1000000, 3000000, 1800000, 3500000],
                     backgroundColor: [
                         'rgba(217, 13, 50, 1)',
                     ],
@@ -2036,10 +2085,43 @@
                 scales: {
                     x: {
                         stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
                     },
                     y: {
                         stacked: true,
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            // maxTicksLimit:3,
+                            callback: ((context, index) => {
+                                let responseyquarter;
+                                if (context === 1000000) {
+                                    responseyquarter = '₹10L'
+                                } else if (context === 2000000) {
+                                    responseyquarter = '₹20L'
+                                } else if (context === 3000000) {
+                                    responseyquarter = '₹30L'
+                                } else if (context === 4000000) {
+                                    responseyquarter = '₹40L'
+                                } else if (context === 5000000) {
+                                    responseyquarter = '₹50L'
+                                } else if (context === 6000000) {
+                                    responseyquarter = '₹60L'
+                                } else if (context === 7000000) {
+                                    responseyquarter = '₹70L'
+                                } else if (context === 8000000) {
+                                    responseyquarter = '₹80L'
+                                } else if (context === 9000000) {
+                                    responseyquarter = '₹90L'
+                                } else if (context === 10000000) {
+                                    responseyquarter = '₹1Cr'
+                                } else {
+                                    responseyquarter = '0'
+                                }
+                                return responseyquarter
+                            })
+                        }
                     }
 
                 },
@@ -2234,13 +2316,13 @@
             ],
             datasets: [{
                 label: 'My First Dataset',
-                data: [500, 300],
+                data: [800, 400],
                 backgroundColor: [
                     'rgba(30, 29, 63, 1)',
                     'rgba(74, 175, 217, 1)'
                 ],
                 // hoverOffset: 4,
-                borderWidth: 10,
+                borderWidth: 3,
                 borderRadius: 8
             }]
         };
@@ -2262,11 +2344,11 @@
 
                 const xCoor = chart.getDatasetMeta(0).data[0].x;
                 const yCoor = chart.getDatasetMeta(0).data[0].y;
-                ctx.font = 'bold 16px Inter';
+                ctx.font = '500 16px Inter';
                 ctx.fillStyle = '#151A24';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle',
-                    ctx.fillText('850Cr', xCoor, yCoor);
+                    ctx.fillText('1200Cr', xCoor, yCoor);
             }
         }
 
@@ -2288,8 +2370,574 @@
     </script>
 
 
-
     <!-- YEAR SCRIPT END -->
+
+    <!-- KPI TREND SELECT -->
+
+    <!-- MONTH START -->
+    <script>
+        // Sample datasets
+        const kpitrendmonthdata = {
+            kpitrendmonth1: [
+                { label: "Lead", data: [18, 23, 25, 10], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [15, 20, 22, 8], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [12, 13, 10, 6], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [9, 10, 7, 3], borderColor: "rgba(217, 13, 50, 1)" }
+            ],
+            kpitrendmonth2: [
+                { label: "Lead", data: [5, 15, 25, 35, 45, 55], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [30, 10, 50, 40, 20, 60], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [9, 50, 35, 25, 12, 40], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [3, 10, 15, 60, 45, 25], borderColor: "rgba(217, 13, 50, 1)" }
+            ],
+            kpitrendmonth3: [
+                { label: "Lead", data: [30, 10, 50, 40, 20, 60], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [25, 35, 45, 55, 65, 75], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [25, 35, 45, 55, 65, 75], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [9, 50, 35, 25, 12, 40], borderColor: "rgba(217, 13, 50, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiMonthgraph = document.getElementById("mykpiMonthgraph").getContext("2d");
+        let chart = new Chart(mykpiMonthgraph, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendmonthdata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { display: false }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Event listener to change dataset
+        // document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+        //     const selectedDataset = this.value;
+        //     chart.data.datasets = kpitrendmonthdata[selectedDataset];
+        //     chart.update();
+        // });
+    </script>
+    <!-- MONTH END -->
+
+    <!-- QUARTER START -->
+
+    <script>
+        // Sample datasets
+        const kpitrendquarterdata = {
+            kpitrendquarter1: [
+                { label: "Lead", data: [18, 23, 25, 10], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [15, 20, 22, 8], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [12, 13, 15, 6], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [9, 10, 17, 3], borderColor: "rgba(217, 13, 50, 1)" }
+            ],
+            kpitrendquarter2: [
+                { label: "Lead", data: [5, 15, 25, 35, 45, 55], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [30, 10, 50, 40, 20, 60], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [9, 50, 35, 25, 12, 40], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [3, 10, 15, 60, 45, 25], borderColor: "rgba(217, 13, 50, 1)" }
+            ],
+            kpitrendquarter3: [
+                { label: "Lead", data: [30, 10, 50, 40, 20, 60], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [25, 35, 45, 55, 65, 75], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [25, 35, 45, 55, 65, 75], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [9, 50, 35, 25, 12, 40], borderColor: "rgba(217, 13, 50, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiquartergraph = document.getElementById("mykpiquartergraph").getContext("2d");
+        let chartkpiquarter = new Chart(mykpiquartergraph, {
+            type: "line",
+            data: {
+                labels: ["Q1", "Q2", "Q3", "Q4"],
+                datasets: kpitrendquarterdata.kpitrendquarter1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { display: false }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Event listener to change dataset
+        // document.getElementById("KpiTrendquarterselect").addEventListener("change", function () {
+        //     const selectedDataset = this.value;
+        //     chartkpiquarter.data.datasets = kpitrendquarterdata[selectedDataset];
+        //     chartkpiquarter.update();
+        // });
+    </script>
+
+
+    <!-- QUARTER END -->
+
+    <!-- YEAR START -->
+
+    <script>
+        // Sample datasets
+        const kpitrendyeardata = {
+            kpitrendyear1: [
+                { label: "Lead", data: [18, 23, 25, 10, 21, 18, 20, 17, 18, 20, 22, 18], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [15, 20, 22, 8, 18, 15, 17, 13, 15, 17, 19, 15], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [12, 13, 18, 6, 13, 12, 14, 10, 13, 15, 17, 13], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [9, 10, 15, 3, 10, 8, 12, 7, 10, 13, 15, 10], borderColor: "rgba(217, 13, 50, 1)" }
+            ],
+            kpitrendyear2: [
+                { label: "Lead", data: [5, 15, 25, 35, 45, 55], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [30, 10, 50, 40, 20, 60], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [9, 50, 35, 25, 12, 40], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [3, 10, 15, 60, 45, 25], borderColor: "rgba(217, 13, 50, 1)" }
+            ],
+            kpitrendyear3: [
+                { label: "Lead", data: [30, 10, 50, 40, 20, 60], borderColor: "rgba(30, 29, 63, 1)" },
+                { label: "Login", data: [25, 35, 45, 55, 65, 75], borderColor: "rgba(74, 175, 217, 1)" },
+                { label: "Sanction", data: [25, 35, 45, 55, 65, 75], borderColor: "rgba(27, 101, 166, 1)" },
+                { label: "Disbursements", data: [9, 50, 35, 25, 12, 40], borderColor: "rgba(217, 13, 50, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiyeargraph = document.getElementById("mykpiyeargraph").getContext("2d");
+        let chartkpiyear = new Chart(mykpiyeargraph, {
+            type: "line",
+            data: {
+                labels: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+                datasets: kpitrendyeardata.kpitrendyear1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { display: false }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Event listener to change dataset
+        // document.getElementById("KpiTrendyearselect").addEventListener("change", function () {
+        //     const selectedDataset = this.value;
+        //     chartkpiyear.data.datasets = kpitrendyeardata[selectedDataset];
+        //     chartkpiyear.update();
+        // });
+    </script>
+
+
+    <!-- YEAR END -->
+    <!-- KPI TREND SELECT END -->
+
+    <!-- SALES OVERVIEW START -->
+
+    <!-- MONTH START -->
+
+    <script>
+        // Define multiple datasets
+        const datasets = {
+            salesoverview1: {
+                chart1: [30, 20],
+                chart2: [35, 65]
+            },
+            salesoverview2: {
+                chart1: [25, 75],
+                chart2: [75, 25]
+            },
+            salesoverview3: {
+                chart1: [35, 65],
+                chart2: [43, 57]
+            }
+        };
+
+        const doughnutLabelone = {
+            id: 'doughnutLabelone',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = '500 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('50Cr', xCoor, yCoor);
+            }
+        }
+
+        const doughnutLabeltwo = {
+            id: 'doughnutLabeltwo',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = '500 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('100 C', xCoor, yCoor);
+            }
+        }
+
+        // Create the first Doughnut chart
+        const ctx1 = document.getElementById("salesoverviewmonthone").getContext("2d");
+        let salesoverviewmonthone = new Chart(ctx1, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: datasets.salesoverview1.chart1,
+                    backgroundColor: ['rgba(27, 101, 166, 1)', 'rgba(217, 13, 50, 1)']
+                }]
+            },
+            options: { responsive: true },
+            plugins: [doughnutLabelone]
+        });
+
+        // Create the second Doughnut chart
+        const ctx2 = document.getElementById("salesoverviewmonthtwo").getContext("2d");
+        let salesoverviewmonthtwo = new Chart(ctx2, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: datasets.salesoverview1.chart2,
+                    backgroundColor: ["rgba(30, 29, 63, 1)", "rgba(74, 175, 217, 1)"]
+                }]
+            },
+            options: { responsive: true },
+            plugins: [doughnutLabeltwo]
+        });
+
+        // Event listener to update both charts
+        // document.getElementById("salesoverviewselect").addEventListener("change", function () {
+        //     const selectedDataset = datasets[this.value];
+
+        //     // Update first chart
+        //     salesoverviewmonthone.data.datasets[0].data = selectedDataset.chart1;
+        //     salesoverviewmonthone.update();
+
+        //     // Update second chart
+        //     salesoverviewmonthtwo.data.datasets[0].data = selectedDataset.chart2;
+        //     salesoverviewmonthtwo.update();
+        // });
+    </script>
+
+    <!-- MONTH END -->
+
+    <!-- QUARTER START -->
+    <script>
+        // Define multiple datasets
+        const datasetsquarter = {
+            salesoverviewquarter1: {
+                chart1: [50, 150],
+                chart2: [115, 185]
+            },
+            salesoverviewquarter2: {
+                chart1: [215, 275],
+                chart2: [100, 400]
+            },
+            salesoverviewquarter3: {
+                chart1: [150, 350],
+                chart2: [400, 100]
+            }
+        };
+
+        const doughnutLabelonequarter = {
+            id: 'doughnutLabelonequarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = '500 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('200Cr', xCoor, yCoor);
+            }
+        }
+
+        const doughnutLabeltwoquarter = {
+            id: 'doughnutLabeltwoquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = '500 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('300cr', xCoor, yCoor);
+            }
+        }
+
+        // Create the first Doughnut chart
+        const ctx1quarter = document.getElementById("salesoverviewquarterone").getContext("2d");
+        let salesoverviewmonthonequarter = new Chart(ctx1quarter, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: datasetsquarter.salesoverviewquarter1.chart1,
+                    backgroundColor: ["rgba(27, 101, 166, 1)", "rgba(217, 13, 50, 1)"]
+                }]
+            },
+            options: { responsive: true },
+            plugins: [doughnutLabelonequarter]
+        });
+
+        // Create the second Doughnut chart
+        const ctx2quarter = document.getElementById("salesoverviewquartertwo").getContext("2d");
+        let salesoverviewmonthtwoquarter = new Chart(ctx2quarter, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: datasetsquarter.salesoverviewquarter1.chart2,
+                    backgroundColor: ["rgba(30, 29, 63, 1)", "rgba(74, 175, 217, 1)"]
+                }]
+            },
+            options: { responsive: true },
+            plugins: [doughnutLabeltwoquarter]
+        });
+
+        // Event listener to update both charts
+        // document.getElementById("salesoverviewselectquarter").addEventListener("change", function () {
+        //     const selectedDataset = datasetsquarter[this.value];
+
+        //     // Update first chart
+        //     salesoverviewmonthonequarter.data.datasets[0].data = selectedDataset.chart1;
+        //     salesoverviewmonthonequarter.update();
+
+        //     // Update second chart
+        //     salesoverviewmonthtwoquarter.data.datasets[0].data = selectedDataset.chart2;
+        //     salesoverviewmonthtwoquarter.update();
+        // });
+    </script>
+
+    <!-- QUARTER END -->
+
+    <!-- YEAR START -->
+    <script>
+        // Define multiple datasets
+        const datasetsyear = {
+            salesoverviewyear1: {
+                chart1: [125, 375],
+                chart2: [400, 800]
+            },
+            salesoverviewyear2: {
+                chart1: [150, 850],
+                chart2: [750, 250]
+            },
+            salesoverviewyear3: {
+                chart1: [300, 700],
+                chart2: [500, 500]
+            }
+        };
+
+        const doughnutLabeloneyear = {
+            id: 'doughnutLabeloneyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = '500 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('500Cr', xCoor, yCoor);
+            }
+        }
+
+        const doughnutLabeltwoyear = {
+            id: 'doughnutLabeltwoyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = '500 16px sans-serif';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('1200cr', xCoor, yCoor);
+            }
+        }
+
+        // Create the first Doughnut chart
+        const ctx1year = document.getElementById("salesoverviewyearone").getContext("2d");
+        let salesoverviewmonthoneyear = new Chart(ctx1year, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: datasetsyear.salesoverviewyear1.chart1,
+                    backgroundColor: ["rgba(27, 101, 166, 1)", "rgba(217, 13, 50, 1)"]
+                }]
+            },
+            options: { responsive: true },
+            plugins: [doughnutLabeloneyear]
+        });
+
+        // Create the second Doughnut chart
+        const ctx2year = document.getElementById("salesoverviewyeartwo").getContext("2d");
+        let salesoverviewmonthtwoyear = new Chart(ctx2year, {
+            type: "doughnut",
+            data: {
+                datasets: [{
+                    data: datasetsyear.salesoverviewyear1.chart2,
+                    backgroundColor: ["rgba(30, 29, 63, 1)", "rgba(74, 175, 217, 1)"]
+                }]
+            },
+            options: { responsive: true },
+            plugins: [doughnutLabeltwoyear]
+        });
+
+        // Event listener to update both charts
+        // document.getElementById("salesoverviewselectyear").addEventListener("change", function () {
+        //     const selectedDataset = datasetsyear[this.value];
+
+        //     // Update first chart
+        //     salesoverviewmonthoneyear.data.datasets[0].data = selectedDataset.chart1;
+        //     salesoverviewmonthoneyear.update();
+
+        //     // Update second chart
+        //     salesoverviewmonthtwoyear.data.datasets[0].data = selectedDataset.chart2;
+        //     salesoverviewmonthtwoyear.update();
+        // });
+    </script>
+    <!-- YEAR END -->
+
+
+
+    <!-- SALES OVERVIEW END -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([19.0596, 72.8295], 12); // Centered at New Delhi
+
+        // Load and display tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Predefined Circular Area (Example)
+        var circle = L.circle([19.0596, 72.8295], {
+            color: 'rgba(143, 92, 214, 1)',
+            fillColor: 'rgba(143, 92, 214, 1)',
+            fillOpacity: 0.5,
+            radius: 1000 // Radius in meters (5km)
+        }).addTo(map)
+            .bindPopup("Default Circular Area (5km)");
+
+    </script>
+
+    <script>
+        // Initialize the map
+        var mumbaimap = L.map('mumbaimap').setView([19.0596, 72.8295], 10); // Centered at New Delhi
+
+        // Load and display tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(mumbaimap);
+
+        // Predefined Circular Area (Example)
+        var mumbaicircle = L.mumbaicircle([19.0596, 72.8295], {
+            color: 'rgba(143, 92, 214, 1)',
+            fillColor: 'rgba(143, 92, 214, 1)',
+            fillOpacity: 0.5,
+            radius: 1000 // Radius in meters (5km)
+        }).addTo(mumbaimap)
+            .bindPopup("Default Circular Area (5km)");
+
+    </script>
+
+    <script>
+        // Initialize the map
+        var punemap = L.map('puneMap').setView([18.5204, 73.8567], 5); // Centered at New Delhi
+
+        // Load and display tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(punemap);
+
+        // Predefined Circular Area (Example)
+        var circle = L.circle([118.5204, 73.8567], {
+            color: 'rgba(143, 92, 214, 1)',
+            fillColor: 'rgba(143, 92, 214, 1)',
+            fillOpacity: 0.5,
+            radius: 1000 // Radius in meters (5km)
+        }).addTo(punemap)
+            .bindPopup("Default Circular Area (5km)");
+
+    </script>
+
+    <script>
+        // Initialize the map
+        var mapquarter = L.map('mapquarter').setView([19.0596, 72.8295], 12); // Centered at New Delhi
+
+        // Load and display tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(mapquarter);
+
+        // Predefined Circular Area (Example)
+        var circle = L.circle([19.0596, 72.8295], {
+            color: 'rgba(143, 92, 214, 1)',
+            fillColor: 'rgba(143, 92, 214, 1)',
+            fillOpacity: 0.5,
+            radius: 1000 // Radius in meters (5km)
+        }).addTo(mapquarter)
+            .bindPopup("Default Circular Area (5km)");
+
+    </script>
+
+    <script>
+        // Initialize the map
+        var mapyear = L.map('mapyear').setView([19.0596, 72.8295], 12); // Centered at New Delhi
+
+        // Load and display tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(mapyear);
+
+        // Predefined Circular Area (Example)
+        var circle = L.circle([19.0596, 72.8295], {
+            color: 'rgba(143, 92, 214, 1)',
+            fillColor: 'rgba(143, 92, 214, 1)',
+            fillOpacity: 0.5,
+            radius: 1000 // Radius in meters (5km)
+        }).addTo(mapyear)
+            .bindPopup("Default Circular Area (5km)");
+
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

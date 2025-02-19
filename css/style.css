@@ -94,6 +94,11 @@ nav a span,
     text-decoration: none !important;
 }
 
+select {
+    border: none;
+    outline: none;
+}
+
 select:focus,
 select:focus-within,
 select:focus-visible {
@@ -710,8 +715,9 @@ input:focus {
 
 .sales-boxes p {
     color: #151A24;
-    font-size: 12px;
-    font-weight: 500;
+font-size: 12px;
+font-family: Inter;
+font-weight: 500;
 }
 
 .color-para p {
@@ -731,7 +737,7 @@ input:focus {
 
 .rbh-select {
     margin-bottom: 0 !important;
-    width: 10%;
+    width: 12%;
     padding: 10px 20px;
     background: white;
     box-shadow: 7px 7px 7.300000190734863px #EFEFEF;
@@ -741,6 +747,9 @@ input:focus {
     font-size: 12px;
     font-family: Inter;
     font-weight: 500;
+    display: flex;
+    gap: 8px;
+    position: relative;
 }
 
 .filter-report {
@@ -771,6 +780,7 @@ input:focus {
     background: white;
     border-radius: 6px;
     border: 1px #DFDFDF solid;
+    display: flex;
 }
 
 .num-heading h6 {
@@ -853,7 +863,8 @@ input:focus {
     gap: 8px;
     padding: 8px 16px;
     border-radius: 12px;
-    border: 1px #DFDFDF solid
+    border: 1px #DFDFDF solid;
+    align-items: center;
 }
 
 .calendar p {
@@ -884,7 +895,7 @@ input:focus {
 }
 
 .light-blue.one {
-    width: 35%;
+    width: 23%;
     left: 52%;
 
 }
@@ -1039,11 +1050,157 @@ input:focus {
     height: 400px !important;
 } */
 
-.performance-graph{
+.performance-graph {
     margin-top: 25px;
 }
 
-.leader-legend.performance-legend{
+.leader-legend.performance-legend {
     margin: 16px 0;
 }
+
+.modal-header .box-top-bar.leader-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal-header {
+    border: none !important;
+}
+
 /* DASHBOARD END */
+
+.select-text {
+    border: none;
+    background-color: transparent;
+    color: #6A788E;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    cursor: default !important;
+}
+
+.select-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-content {
+    position: absolute;
+    width: 101%;
+    top: 35px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    left: -1px;
+    right: 0;
+    border-top: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 0 0 8px 8px;
+    display: none;
+}
+
+.dropdown-content a {
+    color: #6A788E;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 8px 0;
+}
+
+.leader-legend.leader-board{
+    justify-content: space-between;
+}
+
+#datePicker{
+    color: transparent;
+    border: transparent;
+    background-color: transparent;
+    width: 2px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent !important;
+}
+
+.rsm-num{
+    color: white;
+font-size: 10px;
+font-family: Inter;
+font-weight: 500;
+right: 1px;
+    position: absolute;
+    top: 5px;
+}
+
+.chartBox.cc{
+    height: 300px;
+}
+
+.kpiBox.kpi-pb{
+    height: 200px;
+}
+
+#map, #mapquarter, #mapyear {
+    height: 200px;
+    width: 100%;
+}
+
+#mumbaimap{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#puneMap{
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.color-box.login{
+    background-color: rgba(30, 29, 63, 1);
+}
+
+.color-box.lead{
+    background-color: rgba(74, 175, 217, 1);
+}
+
+#myChartMonth, #myChartquarter, #myChartyear{
+    width: 100% !important;
+}
+
+.light-blue.two{
+    width: 16%;
+    left: 52%;
+}
+
+.grey.one.two{
+    width: 32%;
+    left: 68%;
+}
+
+.calendar-lmsd-icon {
+    position: relative;
+}
+
+#monthSelect, #quarterSelect, #yearSelect {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 2px;
+    background: transparent;
+    color: transparent;
+}
+
+#monthSelect option, #quarterSelect option, #yearSelect option{
+    position: absolute;
+    width: 100%;
+    color: black !important;
+    top: 5px;
+}
